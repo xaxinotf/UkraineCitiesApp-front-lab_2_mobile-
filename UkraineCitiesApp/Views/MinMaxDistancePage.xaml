@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UkraineCitiesApp.Views.MinMaxDistancePage"
+             Title="Мінімальна та максимальна відстань">
+    <StackLayout Padding="10">
+        <Label Text="Місто з найменшою відстанню від Києва:" FontAttributes="Bold" FontSize="18" />
+        <Label Text="{Binding Min.Name}" FontSize="16" />
+        <Label Text="{Binding Min.Distance, StringFormat='Відстань: {0} км'}" FontSize="16" />
+
+        <Label Text="Місто з найбільшою відстанню від Києва:" FontAttributes="Bold" FontSize="18" Margin="0,20,0,0" />
+        <Label Text="{Binding Max.Name}" FontSize="16" />
+        <Label Text="{Binding Max.Distance, StringFormat='Відстань: {0} км'}" FontSize="16" />
+    </StackLayout>
+</ContentPage>

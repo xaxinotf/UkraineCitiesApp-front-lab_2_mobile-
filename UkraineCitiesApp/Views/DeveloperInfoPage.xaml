@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UkraineCitiesApp.DeveloperInfoPage"
+             Title="Про розробника">
+    <StackLayout Padding="10" Spacing="20">
+        <Image Source="developer_photo.jpg" HeightRequest="200" HorizontalOptions="Center" />
+        <Label Text="Ім'я: Ваше ім'я" FontSize="18" />
+        <Label Text="Електронна пошта: your.email@example.com" FontSize="18" />
+        <Label Text="Коротка біографія: ..." FontSize="16" />
+    </StackLayout>
+</ContentPage>
