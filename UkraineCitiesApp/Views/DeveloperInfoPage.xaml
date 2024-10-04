@@ -5,8 +5,8 @@
              Title="Про розробника">
     <StackLayout Padding="10" Spacing="20">
         <Image Source="developer_photo.jpg" HeightRequest="200" HorizontalOptions="Center" />
-        <Label Text="Ім'я: Ваше ім'я" FontSize="18" />
-        <Label Text="Електронна пошта: your.email@example.com" FontSize="18" />
-        <Label Text="Коротка біографія: ..." FontSize="16" />
+        <Label Text="Чебан Богдан" FontSize="18" />
+        <Label Text="Електронна пошта: forhwfromunivercity@knu.ua" FontSize="18" />
+        <Label Text="Коротка біографія: геній, філантроп, плейбой" FontSize="16" />
     </StackLayout>
 </ContentPage>

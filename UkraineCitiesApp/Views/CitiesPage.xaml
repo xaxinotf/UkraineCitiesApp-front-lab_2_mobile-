@@ -8,16 +8,23 @@
                 <DataTemplate>
                     <StackLayout Padding="10">
                         <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" />
-                        <Label Text="Відстань від Києва: {Binding Distance} км" >
-                            <Label.FormatedText>
+                        <Label>
+                            <Label.FormattedText>
                                 <FormattedString>
                                     <Span Text="Відстань від Києва: "/>
                                     <Span Text="{Binding Region}"/>
                                     <Span Text="км"/>
                                 </FormattedString>
-                            </Label.FormatedText>
+                            </Label.FormattedText>
                         </Label>
-                        <Label Text="Населення: {Binding Population}" />
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Населення: " />
+                                    <Span Text="{Binding Population}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                         <Button Text="Показати на карті" Clicked="ShowOnMap_Clicked" />
                     </StackLayout>
                 </DataTemplate>

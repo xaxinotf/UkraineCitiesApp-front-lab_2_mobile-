@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UkraineCitiesApp.ContactsPage"
-             Title="Контакти">
-    <StackLayout>
-        <CollectionView ItemsSource="{Binding Contacts}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout Padding="10">
-                        <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" />
-                        <Label Text="{Binding Email}" />
-                    </StackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </StackLayout>
-</ContentPage>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="UkraineCitiesApp.ContactsPage"
+            Title="Контакти">
+    <!-- Вкладка з усіма контактами -->
+    <ContentPage Title="Всі контакти">
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding AllContacts}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" />
+                            <Label Text="{Binding Email}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage>
+
+    <!-- Вкладка з обраними контактами -->
+    <ContentPage Title="Обрані контакти">
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding FavoriteContacts}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" />
+                            <Label Text="{Binding Email}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
